@@ -41,7 +41,7 @@
   height: 105px;
 }
 
-.header__adress {
+.header__address {
   justify-self: end;
   line-height: 24.3px;
   color: #000;
@@ -146,7 +146,7 @@
 .bet-button {
   margin-left: 78px;
   width: 257px;
-  height: 52px;
+  min-height: 52px;
   cursor: pointer;
   padding: 12px 32px;
   border-style: solid;
@@ -249,16 +249,19 @@
 }
 
 .about {
-  margin: 181px 50px 180px;
   display: grid;
-  min-height: 487px;
   grid-template-columns: 480px;
   grid-template-rows: 240px;
+  margin: 181px 50px 180px;
 }
 
 .about__column {
   margin-top: 100px;
+  display: grid;
+  grid-row-gap: 25px;
   grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .about__logo {
@@ -276,7 +279,7 @@
 }
 
 .about__title {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
   color: #000;
   font-family: Raleway,Arial,sans-serif;
   font-size: 40px;
@@ -287,21 +290,29 @@
 }
 
 .about__text {
-  display: grid;
-  grid-row-gap: 25px;
   color: #000;
   font-family: Raleway,Arial,sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 25px;
 }
 
 .footer {
   display: flex;
   margin: 0px 50px 90px;
   justify-content: space-around;
+}
+
+.footer__address {
+  justify-self: start;
+  line-height: 24.3px;
+  color: #000;
+  font-family: Raleway,Arial,sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  width: 240px;
 }
 
 .footer__menu {
