@@ -68,7 +68,7 @@ a {
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  min-width: 1340px;
+  width: 100%;
   min-height: 757px;
   background-position: center center;
 }
@@ -80,18 +80,18 @@ a {
   opacity: 0.6;
   background: #000;
   z-index: 0;
+  background-position: center center;
 }
 
 .cover__title {
-  width: 100%;
-  margin: 0 50px;
+  left: 50%;
   position: relative;
   top: 165px;
+  margin-left: -685px;
 }
 
 .alligned-text {
   position: relative;
-  width: 100%;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
@@ -106,7 +106,6 @@ a {
   position: relative;
   top: 128px;
   left: 73px;
-  width: 100%;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
@@ -122,7 +121,6 @@ a {
   position: relative;
   top: 248px;
   left: 107px;
-  width: 100%;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
@@ -139,10 +137,10 @@ a {
 }
 
 .cover__description {
+  left: 50%;
+  margin-left: -315px;
   top: 539px;
-  width: 100%;
   position: relative;
-  margin: 0px 50px 50px 422px;
   display: flex;
   flex-direction: row;
 }
