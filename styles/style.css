@@ -1,12 +1,7 @@
 /* место для вашего кода */
 .header {
   box-sizing: border-box;
-  width: 100%;
   padding: 92px 49px;
-  padding-top: 92px;
-  padding-bottom: 92px;
-  padding-left: 49px;
-  padding-right: 73px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-family: Raleway,Arial,sans-serif;
@@ -15,10 +10,6 @@
   font-weight: 400;
   line-height: normal;
   align-items: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 .header__links-list {
@@ -45,6 +36,7 @@ a {
 
 .header__logo {
   justify-self: center;
+  margin-right: 20px;
 }
 
 .header__logo-img {
@@ -61,14 +53,13 @@ a {
   font-weight: 400;
   width: 240px;
   justify-self: end;
-  margin-right: 7px;
+  margin-right: 32px;
 }
 
 .cover {
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  width: 100%;
   min-height: 757px;
   background-position: center center;
 }
@@ -84,14 +75,15 @@ a {
 }
 
 .cover__title {
-  left: 50%;
+  width: 100%;
   position: relative;
   top: 165px;
-  margin-left: -685px;
+  max-width: 1340px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .alligned-text {
-  position: relative;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
@@ -103,30 +95,26 @@ a {
 }
 
 .alligned-text_center {
-  position: relative;
-  top: 128px;
-  left: 73px;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  line-height: 115%;
+  line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .alligned-text_right{
-  position: relative;
-  top: 248px;
-  left: 107px;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  line-height: 115%;
+  line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
   text-align: end;
@@ -136,18 +124,22 @@ a {
   letter-spacing: 60px;
 }
 
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+
 .cover__description {
-  left: 50%;
-  margin-left: -315px;
-  top: 539px;
+  max-width: 1340px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 300px;
   position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: end;
 }
 
 .text__description-text {
-  position: relative;
-  width: 633px;
   margin-top: 12px;
   color: #FFF;
   text-transform: uppercase;
@@ -161,9 +153,7 @@ a {
 }
 
 .bet-button {
-  position: relative;
   margin-left: 78px;
-  width: 257px;
   min-height: 52px;
   cursor: pointer;
   padding: 12px 32px;
@@ -181,10 +171,6 @@ a {
   background-color: transparent;
 }
 
-.lots {
-  min-width: 1340px;
-}
-
 .lots__heading {
   margin: 180px 1229px 27px 90px;
   color: #000;
@@ -200,15 +186,16 @@ a {
   min-height: 450px;
   margin: 27px 50px 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
   width: 430px;
+  min-height: 450px;
   margin-right: 25px;
   position: relative;
   list-style-type: none;
+  flex-grow: 1;
 }
 
 .card_type_film{
@@ -235,6 +222,10 @@ a {
   width: 430px;
 }
 
+.lots__card-list-item a {
+  text-decoration: none;
+}
+
 .card__title {
   font-size: 22px;
   font-weight: 700;
@@ -246,12 +237,13 @@ a {
 }
 
 .card__link {
+  display: block;
   margin-right: 25px;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 
 .card__text {
-  text-decoration-line: none;
+  text-decoration: none;
   z-index: 1;
   font-size: 20px;
   font-weight: 400;
@@ -323,7 +315,7 @@ a {
 
 .footer {
   display: flex;
-  margin: 0px 78px 90px 50px;
+  margin: 0px 50px 90px 50px;
   justify-content: space-around;
 }
 
@@ -372,6 +364,7 @@ a {
   width: 240px;
   min-height: 48px;
   list-style-type: none;
+  margin-right: 30px;
 }
 
 .footer__social-list-item {
