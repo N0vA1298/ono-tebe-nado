@@ -19,11 +19,12 @@
 
 .header__links-list-item_no-bullit {
   list-style-type: none;
+  margin-right: 32px;
 }
 
 .header__links-list-item {
   list-style-type: circle;
-  margin-left: 33px;
+  margin-right: 32px;
 }
 
 .header__link {
@@ -36,7 +37,6 @@
 
 .header__logo {
   justify-self: center;
-  margin-right: 20px;
 }
 
 .header__logo-img {
@@ -53,7 +53,6 @@
   font-weight: 400;
   width: 240px;
   justify-self: end;
-  margin-right: 32px;
 }
 
 .cover {
@@ -81,6 +80,7 @@
   max-width: 1340px;
   margin-left: 50px;
   margin-right: 50px;
+  min-height: 355px;
 }
 
 .alligned-text {
@@ -95,6 +95,7 @@
 }
 
 .alligned-text_center {
+  display: block;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
@@ -109,6 +110,8 @@
 }
 
 .alligned-text_right{
+  display: block;
+  width: 100%;
   color: #FFF;
   font-family: Raleway,Arial,sans-serif;
   font-size: 100px;
@@ -186,7 +189,7 @@
   min-height: 450px;
   margin: 27px 50px 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .lots__card-list-item {
@@ -195,7 +198,6 @@
   margin-right: 25px;
   position: relative;
   list-style-type: none;
-  flex-grow: 1;
 }
 
 .card_type_film{
@@ -267,7 +269,9 @@
   grid-template-columns: 430px;
   grid-column-gap: 25px;
   grid-template-rows: 240px;
-  margin: 181px 50px 181px;
+  margin-top: 181px;
+  margin-bottom: 181px;
+  margin-left: 50px;
 }
 
 .about__column {
@@ -364,7 +368,6 @@
   width: 240px;
   min-height: 48px;
   list-style-type: none;
-  margin-right: 30px;
 }
 
 .footer__social-list-item {
